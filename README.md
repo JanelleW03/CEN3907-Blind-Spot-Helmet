@@ -6,5 +6,9 @@ At a high level, our current architecture for this project is as follows. We wil
 # Completed Work
 Created a simulation of radar and haptic sensor communication in TinkerCad with an Arduino. We used a vibration sensor, an ultrasonic distance sensor, and an Arduino Uno R3 for this simulation to check the communication between the sensors. It currently causes the sensor to vibrate if the distance sensor detects anything within a 50 cm range. 
 
+Created a very simple convolutional neural network to mimic what our final model might look like. This references a Kaggle dataset with images of different vehicle types and pedestrians. This simple CNN seeks to classify images, and the weights from our final model can be stored on the microprocessor. 
+
 # Known Bugs
 We are currently using a vibration sensor instead of a traditional piezo haptic sensor, because there is some difficult in getting the piezo to vibrate. 
+
+The CNN has low accuracy right now, not much higher than baseline guessing. This is because the model has not been optimized yet for the dataset, so as it is right now, the model needs improvement, but is a good baseline for what potential CNN architecture to use. It may end up needing to be replaced by pretrained weights from transfer learning.
