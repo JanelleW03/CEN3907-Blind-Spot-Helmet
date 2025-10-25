@@ -8,6 +8,8 @@ Created a simulation of radar and haptic sensor communication in TinkerCad with 
 
 Created a very simple convolutional neural network to mimic what our final model might look like. This references a Kaggle dataset with images of different vehicle types and pedestrians. This simple CNN seeks to classify images, and the weights from our final model can be stored on the microprocessor. 
 
+As a team, we have also done extensive research on the different possible components we will use for this project, documented in our pre alpha build report. We have also included sketches of how our hardware will be integrated with the physical helmet, and plans for how we will use a Raspberry Pi to communicate with all the components. We also gave consideration to how we will plan for sensor failure, and the physical resilience of this helmet.
+
 # Known Bugs
 We are currently using a vibration sensor instead of a traditional piezo haptic sensor, because there is some difficult in getting the piezo to vibrate. 
 
