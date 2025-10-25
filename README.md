@@ -1,2 +1,10 @@
 # CEN3907-Blind-Spot-Helmet
 Urban cyclists face safety risks from traffic and limited visibility. Traditional helmets protect the head but don’t enhance awareness. The Blind Spot Helmet uses radar-based detection and haptic feedback to alert riders of nearby vehicles in real time, improving safety for daily commuters on busy streets.
+
+At a high level, our current architecture for this project is as follows. We will use a microprocessor, such as the Raspberry Pi 4, to communicate with the different components, though currently for prototyping, we are using the more simpler Arduino. We will have a radar sensor on our helmet which will send its data to the microprocessor, when it detects motion. This will then prompt the microprocessor to read in the image data from an attached camera sensor and we will use a pretrained model stored on the microprocessor to identify if the object is a dangerous vehicle, or a less dangerous person, animal, etc. If a dangerous object is detected in the blind spot, our haptic sensors will emit a light buzz to notify the biker. 
+
+# Completed Work
+Created a simulation of radar and haptic sensor communication in TinkerCad with an Arduino. We used a vibration sensor, an ultrasonic distance sensor, and an Arduino Uno R3 for this simulation to check the communication between the sensors. It currently causes the sensor to vibrate if the distance sensor detects anything within a 50 cm range. 
+
+# Known Bugs
+We are currently using a vibration sensor instead of a traditional piezo haptic sensor, because there is some difficult in getting the piezo to vibrate. 
