@@ -29,14 +29,14 @@ void loop()
   dis = 0.01723 * readUltrasonicDistance(3, 4);
   Serial.println(dis);
   delay(1000); // Wait for 1000 millisecond(s)
-  if (dis > 50) {
+  if (dis < 50) {
     digitalWrite(7, HIGH);
     digitalWrite(6, HIGH);
-    tone(5, 5274, 3000); // play tone 100 (E8 = 5274 Hz)
-    delay(1000); // Wait for 1000 millisecond(s)
+    tone(5, 4000, 3000); // play tone 100 (E8 = 5274 Hz)
+    delay(500); // Wait for 1000 millisecond(s)
   } else {
     digitalWrite(7, LOW);
     digitalWrite(6, LOW);
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(500); // Wait for 1000 millisecond(s)
   }
 }
