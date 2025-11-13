@@ -3,7 +3,7 @@
 
 // This code demonstrates a faster radar sensor detection with the use of AltSoftSerial instead of the SoftwareSerial that was used in the original example code
 // also the built-in LED should be blinking as long as the sensor received power 
-// The TX and DX have to be RX=D8 and TX=D9 becuase of this serial
+// The TX and DX have to be RX=D9 and TX=D8 becuase of this serial
 // Also another important thing to mention the baud has to 115200
 
 // Important things to note:
