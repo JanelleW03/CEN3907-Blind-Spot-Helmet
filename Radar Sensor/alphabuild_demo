@@ -1,0 +1,68 @@
+
+#include <AltSoftSerial.h>
+#include "DFRobot_mmWave_Radar.h"
+
+// This code demonstrates a faster radar sensor detection with the use of AltSoftSerial instead of the SoftwareSerial that was used in the original example code
+// also the built-in LED should be blinking as long as the sensor received power 
+// The TX and DX have to be RX=D9 and TX=D8 becuase of this serial
+// Also another important thing to mention the baud has to 115200
+
+// Important things to note:
+// the radar can only sense movement around it (aka if the sensor is moving but there is nothing around it won't detect anything)
+// the arduino seems to consistrently disconnect, have tried switching cables and switching arduinos with little luck
+
+AltSoftSerial mySerial;
+DFRobot_mmWave_Radar sensor(&mySerial);
+
+int dis = 0;
+
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
+}
+
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(115200);        
+  mySerial.begin(115200);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+
+  //sensor.factoryReset();
+  //sensor.DetRangeCfg(0, 0.3);
+  //sensor.OutputLatency(0, 0);
+}
+
+void loop() {
+  int val = sensor.readPresenceDetection();
+  digitalWrite(LED_BUILTIN, val ? HIGH : LOW);
+
+  dis = 0.01723 * readUltrasonicDistance(3, 4);
+  Serial.println("the distance sensor val is ");
+  Serial.println(dis);
+  Serial.println("the radar sensor val is ");
+  Serial.println(val);
+
+  delay(100); // Wait for 1000 millisecond(s)
+  if (dis < 50 && val == 1) {
+    digitalWrite(7, HIGH);
+    digitalWrite(6, HIGH);
+    tone(5, 4000, 3000); // play tone 100 (E8 = 5274 Hz)
+    delay(50); // Wait for 1000 millisecond(s)
+  } else {
+    digitalWrite(7, LOW);
+    digitalWrite(6, LOW);
+    delay(50); // Wait for 1000 millisecond(s)
+  }
+}
