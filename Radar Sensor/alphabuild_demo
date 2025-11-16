@@ -57,11 +57,13 @@ void loop() {
   delay(100); // Wait for 1000 millisecond(s)
   if (dis < 50 && val == 1) {
     digitalWrite(7, HIGH);
+    digitalWrite(10, HIGH); // SECOND HAPTIC FEEDBACK SENSOR 
     digitalWrite(6, HIGH);
     tone(5, 4000, 3000); // play tone 100 (E8 = 5274 Hz)
     delay(50); // Wait for 1000 millisecond(s)
   } else {
     digitalWrite(7, LOW);
+    digitalWrite(10, LOW); // SECOND HAPTIC FEEDBACK SENSOR 
     digitalWrite(6, LOW);
     delay(50); // Wait for 1000 millisecond(s)
   }
