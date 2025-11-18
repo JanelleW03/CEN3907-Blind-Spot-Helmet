@@ -13,4 +13,4 @@ As a team, we’ve also conducted extensive research on potential hardware compo
 # Known Bugs
 We are currently using a vibration sensor, piezo haptic sensor, and LED to demonstrate our proof of concept, as our priority right now is optimizing AI-assisted detection on the Raspberry Pi. Due to the Arduino’s limited processing capabilities, especially when working with the radar sensor, the detection is not as fast as needed. These issues will be resolved once all components are transfered to the Raspberry Pi, though we have also researched alternatives like the Arduino Nano in case a secondary microcontroller is needed.
 
-The CNN has low accuracy right now, not much higher than baseline guessing. This is because the model has not been optimized yet for the dataset, so as it is right now, the model needs improvement, but is a good baseline for what potential CNN architecture to use. It may end up needing to be replaced by pretrained weights from transfer learning.
+The example model downloaded onto the Raspberry Pi is very slow as well, reading only about 5 frames per second. Ideally, this should be much faster when detecting objects on the helmet. 
