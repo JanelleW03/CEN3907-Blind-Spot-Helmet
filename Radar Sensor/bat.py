@@ -4,6 +4,7 @@ from time import sleep, time
 trig = OutputDevice(4)
 echo = InputDevice(17)
 motor = PWMOutputDevice(14)
+led = OutputDevice(18)
 
 sleep(2)
 
@@ -30,12 +31,20 @@ def calculate_vibration(distance):
 
 def calculate_distance(duration):
     speed = 343
-    distance = speed * duration / 2
+    distance = (speed * duration / 2) * 100 ## in cm
     return distance
 
 while True:
     duration = get_pulse_time()
     distance = calculate_distance(duration)
-    print(distance)
-    vibration = calculate_vibration(distance)
-    motor.value = vibration
+    vibration = calculate_vibration(distance/100)
+    print("distance:", distance)
+    print("vibration: ", vibration)
+    
+    if distance < 100:
+        led.on()
+        motor.value = vibration
+        sleep(0.5) # Wait half a second
+    else:
+        led.off()
+        motor.value = 0
