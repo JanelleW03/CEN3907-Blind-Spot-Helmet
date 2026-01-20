@@ -1,0 +1,15 @@
+
+Time Log:
+1/15 - 30 min: setup up log in github as 3rd part reference
+
+1/19 - 3 hrs: team meeting to discuss future plans for Thursday demo and alpha build presentation
+    - ordered temporary Lidar sensor to use for testing (Alpha build)
+    - began wiring arduino components and raspberry pi together
+    - planned rest of week's work with team
+
+1/20 - 3 hrs: Raspi & sensor testing
+    - proved raspi functionality with ultrasonic distance and haptic sensors (moved from arduino to raspi)
+    - designed and tested code
+    - rewrote tests to have the same functionailty as on the arduino
+    - shh the raspi for future easy use 
+    - also cleaned up the timelog and added the previous semesters time log
