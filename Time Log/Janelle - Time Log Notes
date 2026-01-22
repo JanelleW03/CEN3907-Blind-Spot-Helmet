@@ -9,7 +9,14 @@ Time Log:
 
 1/20 - 3 hrs: Raspi & sensor testing
     - proved raspi functionality with ultrasonic distance and haptic sensors (moved from arduino to raspi)
-    - designed and tested code
+    - designed and tested code  (bat.py)
     - rewrote tests to have the same functionailty as on the arduino
     - shh the raspi for future easy use 
     - also cleaned up the timelog and added the previous semesters time log
+
+1/21 - 4 hrs: Lidar testing and integration, team meeting, professor check-in
+    - received lidar sensor and began testing with raspi
+    - discussed progress and next steps with team and professor
+    - we decided to move from AI camera to Lidar for obstacle detection (easier inegration and the camera was not fast enough for our needs)
+    - got a complete working demo with distance sensor, led, and haptic sensor with little to no bugs
+    - developed plan for completed Alpha demo (battery, 3D printed housing, wiring, code integration)
