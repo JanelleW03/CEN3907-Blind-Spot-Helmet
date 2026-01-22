@@ -1,6 +1,8 @@
 from gpiozero import InputDevice, OutputDevice, PWMOutputDevice
 from time import sleep, time
 
+## to run code python 3 bat.py
+
 trig = OutputDevice(4)
 echo = InputDevice(17)
 motor = PWMOutputDevice(14)
@@ -31,20 +33,21 @@ def calculate_vibration(distance):
 
 def calculate_distance(duration):
     speed = 343
-    distance = (speed * duration / 2) * 100 ## in cm
+    distance = (speed * duration / 2)
     return distance
 
 while True:
     duration = get_pulse_time()
     distance = calculate_distance(duration)
-    vibration = calculate_vibration(distance/100)
-    print("distance:", distance)
-    print("vibration: ", vibration)
-    
-    if distance < 100:
+    vibration = calculate_vibration(distance)
+    ##dis = distance * 100
+    print(distance)
+   ## print("vibration: ", vibration)
+    if distance < 0.05:
         led.on()
         motor.value = vibration
-        sleep(0.5) # Wait half a second
+        sleep(0.0001)
     else:
         led.off()
         motor.value = 0
+        sleep(0.0001)

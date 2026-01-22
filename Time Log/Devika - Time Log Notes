@@ -1,3 +1,9 @@
 
 Time Log:
 1/15 - setup up log in github as 3rd part reference
+1/19 - 3 hrs - reviewed work from last semester, researched and purchased LIDAR sensor to use, found 
+  example raspberry pi code to connect UDS and haptics
+1/19 - 2 hrs - moved CNN model over to Colab, re-trained, and attempted conversion from Pytorch to tflite
+1/20 - 2 hrs - created sample Python script (bat.py) to connect UDS and haptics to RP GPIO
+1/20 - 3 hrs - researched tflite model, began rewriting CNN in tensorflow
+1/21 - 3 hrs - rewrote and retrained base model in tensorflow, got to similar accuracy level as before
