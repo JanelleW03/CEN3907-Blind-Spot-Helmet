@@ -7,3 +7,5 @@ Time Log:
 1/20 - 2 hrs - created sample Python script (bat.py) to connect UDS and haptics to RP GPIO
 1/20 - 3 hrs - researched tflite model, began rewriting CNN in tensorflow
 1/21 - 3 hrs - rewrote and retrained base model in tensorflow, got to similar accuracy level as before
+1/22 - 3 hrs - met with professor, discussed changing rasp pi to pico, researched power options for the pi
+1/27 - 3 hrs - modified example object detection model from github to run without visualization to speed up FPS  and inference, added basic gpio integration 
