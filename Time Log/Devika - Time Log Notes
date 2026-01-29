@@ -9,3 +9,5 @@ Time Log:
 1/21 - 3 hrs - rewrote and retrained base model in tensorflow, got to similar accuracy level as before
 1/22 - 3 hrs - met with professor, discussed changing rasp pi to pico, researched power options for the pi
 1/27 - 3 hrs - modified example object detection model from github to run without visualization to speed up FPS  and inference, added basic gpio integration 
+1/28 - 3 hrs - set up headless script on raspberry pi, got it to work, downloaded tflite model onto rasp pi 
+1/29 - 2 hrs - discussed helmet shape modifications, added lidar gpio code to headless script
