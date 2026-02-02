@@ -8,6 +8,7 @@ echo = InputDevice(17)
 motor = PWMOutputDevice(22)
 led = OutputDevice(27)
 button = Button(10)
+button_state = False
 
 sleep(2)
 
@@ -66,6 +67,13 @@ def read_tfluna_data():
 if ser.isOpen() == False:
         ser.open()
 
+
+def toggle_system():
+    global button_state
+    button_state = not button_state
+    print("System ON" if button_state else "System OFF")
+
+
 while True:
         duration = get_pulse_time()
         if duration is None:
@@ -77,12 +85,15 @@ while True:
 
         distanceTF, strength, temp = read_tfluna_data()
 
-        if distanceTF is not None:
-                print(f"TFLuna has some distance: {distanceTF:.3f} m")
-        else:
-                print("there is not TFLuna data")
+        #if distanceTF is not None:
+                #print(f"TFLuna has some distance: {distanceTF:.3f} m")
+        #else:
+                #print("there is not TFLuna data")
 
-        if button.is_pressed:
+        # button state management
+        button.when_pressed = toggle_system
+
+        if button_state: # button is pressed to turn on the system
                 ##dis = distance * 100
                 print(f"Ultrasonic: {distanceUD:.3f} m | TF-Luna: {distanceTF:.3f} m")
                 ## print("vibration: ", vibration)
@@ -92,7 +103,7 @@ while True:
                 else:
                         led.off()
                         motor.value = 0
-        else: 
+        else:
                 led.off()
                 motor.value = 0  
         sleep(0.0001)
