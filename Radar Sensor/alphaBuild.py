@@ -1,4 +1,4 @@
-from gpiozero import InputDevice, OutputDevice, PWMOutputDevice
+from gpiozero import InputDevice, OutputDevice, PWMOutputDevice, Button
 from time import sleep
 import serial, time
 import numpy as np
@@ -7,6 +7,7 @@ trig = OutputDevice(4)
 echo = InputDevice(17)
 motor = PWMOutputDevice(22)
 led = OutputDevice(27)
+button = Button(10)
 
 sleep(2)
 
@@ -74,20 +75,24 @@ while True:
         distanceUD = calculate_distance(duration)
         vibration = calculate_vibration(distanceUD)
 
-		distanceTF, strength, temp = read_tfluna_data()
+        distanceTF, strength, temp = read_tfluna_data()
 
         if distanceTF is not None:
                 print(f"TFLuna has some distance: {distanceTF:.3f} m")
         else:
                 print("there is not TFLuna data")
 
-        ##dis = distance * 100
-        print(f"Ultrasonic: {distanceUD:.3f} m | TF-Luna: {distanceTF:.3f} m")
-        ## print("vibration: ", vibration)
-        if distanceUD < 0.05 and distanceTF < 0.05:
-                led.on()
-                motor.value = vibration
-        else:
+        if button.is_pressed:
+                ##dis = distance * 100
+                print(f"Ultrasonic: {distanceUD:.3f} m | TF-Luna: {distanceTF:.3f} m")
+                ## print("vibration: ", vibration)
+                if distanceUD < 0.05 and distanceTF < 0.05:
+                        led.on()
+                        motor.value = vibration
+                else:
+                        led.off()
+                        motor.value = 0
+        else: 
                 led.off()
-                motor.value = 0
+                motor.value = 0  
         sleep(0.0001)
