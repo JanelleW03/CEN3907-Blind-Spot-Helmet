@@ -27,13 +27,22 @@ Time Log:
     - staged a mini demo for the alpha build with all components we had working at the time including: UD and LED on the raspi
     - researched for the LiDar we need to order
 
-1/26 - 3hrs: lidar fully integrated & PCB discussion
+1/26 - 4hrs: lidar fully integrated & PCB discussion
     - initialized the UART for the LiDar
     - got the lidar fully functional using examples from the following websites:
         - https://makersportal.com/blog/distance-detection-with-the-tf-luna-lidar-and-raspberry-pi?srsltid=AfmBOor3_qmpS5YuLqr8yXoOtPq9wEVS-RkVBo3wcFVprpydy6TLWDue
     - the full circuit is functional with the distance sensor, light, and lidar sensor
     - researched and explored options for making a PCB for the future, very much still in the works but its something out stakeholder had mentioned in our last meeting
 
+2/3 - 4  hrs: team/mentor meeting and on/off button integration
+    - had alpha build demo
+    - worked out kinks with on/off button and now works with no known bugs
+    - discussed future plans for beta build 
+    - printed another iteraion of the housing unit
+    - did research on better wiring connections
+    - also made it possible to push code to github from raspi terminal
+    need to do: figure out concise wiring (perhaps jst connectors) and switch to RGB LED (yellow = idle, green = detection, off = system is off)
 
-TOTAL HOURS: 19.5 
-    updated 1/29
+
+TOTAL HOURS: 23.5 
+    updated 2/3
