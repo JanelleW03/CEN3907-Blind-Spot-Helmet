@@ -9,7 +9,31 @@ Time Log:
 
 1/20 - 3 hrs: Raspi & sensor testing
     - proved raspi functionality with ultrasonic distance and haptic sensors (moved from arduino to raspi)
-    - designed and tested code
+    - designed and tested code  (bat.py)
     - rewrote tests to have the same functionailty as on the arduino
     - shh the raspi for future easy use 
     - also cleaned up the timelog and added the previous semesters time log
+
+1/21 - 4 hrs: Lidar testing and integration, team meeting, professor check-in
+    - received lidar sensor and began testing with raspi
+    - discussed progress and next steps with team and professor
+    - we decided to move from AI camera to Lidar for obstacle detection (easier inegration and the camera was not fast enough for our needs)
+    - got a complete working demo with distance sensor, led, and haptic sensor with little to no bugs
+    - developed plan for completed Alpha demo (battery, 3D printed housing, wiring, code integration)
+
+1/22 - 3 hrs: meeting with stakholder
+    - met with Alex and discussed the future of the project
+    - also met with the team separately to talk about the demo for the alpha build
+    - staged a mini demo for the alpha build with all components we had working at the time including: UD and LED on the raspi
+    - researched for the LiDar we need to order
+
+1/26 - 3hrs: lidar fully integrated & PCB discussion
+    - initialized the UART for the LiDar
+    - got the lidar fully functional using examples from the following websites:
+        - https://makersportal.com/blog/distance-detection-with-the-tf-luna-lidar-and-raspberry-pi?srsltid=AfmBOor3_qmpS5YuLqr8yXoOtPq9wEVS-RkVBo3wcFVprpydy6TLWDue
+    - the full circuit is functional with the distance sensor, light, and lidar sensor
+    - researched and explored options for making a PCB for the future, very much still in the works but its something out stakeholder had mentioned in our last meeting
+
+
+TOTAL HOURS: 19.5 
+    updated 1/29

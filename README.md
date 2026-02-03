@@ -14,3 +14,6 @@ As a team, we’ve also conducted extensive research on potential hardware compo
 We are currently using a vibration sensor, piezo haptic sensor, and LED to demonstrate our proof of concept, as our priority right now is optimizing AI-assisted detection on the Raspberry Pi. Due to the Arduino’s limited processing capabilities, especially when working with the radar sensor, the detection is not as fast as needed. These issues will be resolved once all components are transfered to the Raspberry Pi, though we have also researched alternatives like the Arduino Nano in case a secondary microcontroller is needed.
 
 The example model downloaded onto the Raspberry Pi is very slow as well, reading only about 5 frames per second. Ideally, this should be much faster when detecting objects on the helmet. 
+
+# Onshape Design of Helmet Module
+https://cad.onshape.com/documents/718453d0fac994bf19ba09c7/w/0e19fb7305c1e5489b3984cd/e/2fc86442675e4b3da09defcf?renderMode=0&uiState=697d17874ebd30078a4fd052

@@ -1,7 +1,23 @@
 
 Time Log:
+
 1/15 - setup up log in github as 3rd part reference
+
 1/19 - 3 hours (team meeting)
   - ordered temporary Lidar sensor to use for testing (Alpha build)
   - began wiring arduino components and raspberry pi together
   - planned rest of week's work with team
+
+1/20 - 2 hours (individual/team meeting)
+  - aided Devika and Janelle in proving raspi functionality with ultrasonic distance and haptic sensors (moved from arduino to raspi)
+  - began setting up ssh for the Raspi for future parallel team work
+
+1/22 - 3 hours (team meeting)
+  - met with group before stakeholder check-in to discuss changing scope of project for alpha build specifically
+  - Check-in meeting with stakeholder to discuss changes
+  - implemented ssh for Raspi for future parallel independent/team work
+  - made plan for 3d modeling of helmet module and next steps
+
+1/23 - 2 hours (individual/team meeting)
+  - met with Emily to work on 3d-modeled helmet module on Onshape
+  - brainstormed new ideas for module implementation
