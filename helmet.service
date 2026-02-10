@@ -1,0 +1,14 @@
+[Unit]
+Description=Helmet Program
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/helmet/cam_service.py
+WorkingDirectory=/home/helmet
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
