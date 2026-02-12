@@ -1,4 +1,5 @@
-from time import time, sleep
+import time
+from time import sleep
 from gpiozero import InputDevice, OutputDevice, PWMOutputDevice
 import sys
 
@@ -72,7 +73,7 @@ def detect(csi_camera: bool, width: int, height: int, num_threads: int, enable_e
     base_options = core.BaseOptions(
         file_name=model, use_coral=enable_edgetpu, num_threads=num_threads)
     detection_options = processor.DetectionOptions(
-        max_results=4, score_threshold=0.3)
+        max_results=4, score_threshold=0.5)
     options = vision.ObjectDetectorOptions(
         base_options=base_options, detection_options=detection_options)
     detector = vision.ObjectDetector.create_from_options(options)
@@ -99,6 +100,7 @@ def detect(csi_camera: bool, width: int, height: int, num_threads: int, enable_e
         # Run object detection estimation using the model
         detections = detector.detect(image_tensor)
 
+        triggered = False
 	    # Replacement code!!!!
         if detections.detections:
     	    for det in detections.detections:
@@ -106,14 +108,17 @@ def detect(csi_camera: bool, width: int, height: int, num_threads: int, enable_e
                 label = category.category_name
                 score = category.score
                 
-                bbox = det.bounding_box
-                print(f"Detected: {label} ({score:.2f}) "
-              			f"at x={bbox.origin_x}, y={bbox.origin_y}, "
-              			f"w={bbox.width}, h={bbox.height}")
+                # bbox = det.bounding_box
+                # print(f"Detected: {label} ({score:.2f}) "
+              	# 		f"at x={bbox.origin_x}, y={bbox.origin_y}, "
+              	# 		f"w={bbox.width}, h={bbox.height}")
                 if label in TRIGGER_CLASSES:
-                    motor.value = 5 # hardcoded vibration amount
-                    sleep(0.1)
-                    motor.value = 0
+                    triggered = True
+                    break
+            if triggered:
+                motor.value = 0.8 # hardcoded vibration amount
+                sleep(0.1)
+                motor.value = 0
 
 
         # Calculate the FPS
