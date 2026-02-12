@@ -1,11 +1,11 @@
-from gpiozero import InputDevice, OutputDevice, PWMOutputDevice, Button, DistanceSensor
+from gpiozero import RGBLED, PWMOutputDevice, Button, DistanceSensor
 from time import sleep
 import serial, time
 import numpy as np
 
 UD = DistanceSensor(echo=17, trigger=4, max_distance=4)
-motor = PWMOutputDevice(22)
-led = OutputDevice(27)
+motor = PWMOutputDevice(27)
+led = RGBLED(10, 9, 11, active_high=True)
 button = Button(10)
 button_state = False
 
@@ -64,14 +64,13 @@ while True:
 		#print("System running")
 		print(f"Ultrasonic: {distanceUD:.3f} m | TF-Luna: {distanceTF:.3f} m")
 		#print("vibration: ", vibration)
-		if distanceUD < 0.5 and distanceTF < 0.5:
-			led.on()
+		if distanceTF < 0.5: # distanceUD < 0.5 and (for distance sensor reliability)
+			led.color(0, 1, 0) # Green
 			motor.value = vibration
 		else:
-			led.off()
+			led.color(1, 1, 0) # Yellow when no object is close 
 			motor.value = 0
 	else:
 		print("System Idle")
-		led.off()
+		led.color(1, 0, 0) # Red when off
 		motor.value = 0
-
