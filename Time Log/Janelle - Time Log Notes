@@ -43,6 +43,20 @@ Time Log:
     - also made it possible to push code to github from raspi terminal
     need to do: figure out concise wiring (perhaps jst connectors) and switch to RGB LED (yellow = idle, green = detection, off = system is off)
 
+2/7 - 2 hrs: 3D model and RGB 
+    - adding RGB to indicate different states of the system (red off, yellow idle, green detection)
+    - looked into batteries for the raspi
+    - using the first iteration of the casing to be mounted on the helmet I attempt to get all components to fit (not successful)
 
-TOTAL HOURS: 23.5 
-    updated 2/3
+2/10 - 3 hrs: 3D adjustments and team meeting
+    - worked with Ana to get all needed adjustments for the 3D model and started printing iteration 2
+    - ordered the second lidar sensor
+    - completely moved all components to a smaller breadboard to make casing easier in the future (cutting resistors shorter etc.)
+
+2/12 - 2 hrs:
+    - worked with the RGB LED again, the code seems to be fully functional but wiring is a bit of an issue
+    - fully removed the UD sensor in preperation for the second lidar sensor
+    - adjusted wiring to allow easier placement into the raspi casing 
+
+TOTAL HOURS: 30.5 
+    updated 2/12
