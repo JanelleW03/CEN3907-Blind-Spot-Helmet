@@ -24,3 +24,17 @@ Time Log:
 2/3 - 5 hours (team meeting)
     - Alpha demo
     - Adjustments to 3d model
+
+2/10 - 4 hours (team meeting)
+    - Print final 3d model for beta
+    - Include button on prototype
+    - Include LED on prototype
+    - Adjust lidar sensor and haptic holes positioning
+
+2/12 - 4 hours (team meeting)
+    - Built whole system inside 3d model, adjusting wiring as necessary
+    - beta check-in meeting
+
+2/15 - 7 hours (individual)
+    - Began working on code for Raspberry pi pico
+    - Should do the same as the current Pi 4 solution
