@@ -21,3 +21,27 @@ Time Log:
 1/23 - 2 hours (individual/team meeting)
   - met with Emily to work on 3d-modeled helmet module on Onshape
   - brainstormed new ideas for module implementation
+
+1/27 - 2 hours (individual/team meeting)
+  - worked on 3d model initial idea (sliding mount and housing module) on Onshape
+  - used actual component measurements to create prototype model, with hole placements for components being considered (haptic wires, charger, etc.)
+  - started printing first model
+
+1/29 - 3 hours (team meeting)
+  - researched helmet attachment mechanisms; considered weight of module, weather resistance, and more
+  - made adjustments to 3d model to comfortably fit lidar sensors out of range of each others view
+
+2/3 - 3 hours (team meeting)
+  - alpha demo, made more adjustments to 3d model and reprinted
+
+2/10 - 4 hours (team meeting)
+  - edited and printed final beta prototype of 3d model, with full consideration of how we desired that the components would reside in the module
+  - included button and led placement, adjustments to lidar sensor holes, and haptic hole placement
+
+2/12 - 3 hours (team meeting)
+  - placed all components within new module to demonstrate potential final products
+  - beta check-in meeting
+  - rewired/replaced wires between raspberry pi, breadboard, and lidar to make everything fit more comfortably and look more polished
+  - considered changing gpio assignments on raspberry pi to accomodate for the second lidar and haptic sensor
+
+2/17
