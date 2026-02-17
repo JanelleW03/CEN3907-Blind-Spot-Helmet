@@ -4,7 +4,7 @@ import serial, time
 import numpy as np
 
 # UD = DistanceSensor(echo=17, trigger=4, max_distance=4)
-motor = PWMOutputDevice(27)
+motor = PWMOutputDevice(26)
 led = RGBLED(10, 9, 11, active_high=True)
 button = Button(17)
 button_state = False
