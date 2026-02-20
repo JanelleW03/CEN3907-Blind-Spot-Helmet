@@ -38,3 +38,18 @@ Time Log:
 2/15 - 7 hours (individual)
     - Began working on code for Raspberry pi pico
     - Should do the same as the current Pi 4 solution
+
+2/16 - 6.5 hours (individual)
+    - Worked on Pico code
+    - Trying to use interrupts to get LiDARs working properly
+
+2/17 - 3 hours (team meeting)
+    - change lidar code to work with longer distance
+
+2/18 - 4 hours (team meeting)
+    - Attached haptics to system and made sure they worked properly
+
+2/19 - 6 hours (individual)
+    - Worked on Pico code
+    - Fixed issues with Ring Buffer
+    - Working!
