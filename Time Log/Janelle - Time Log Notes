@@ -1,6 +1,9 @@
 
 Time Log:
-1/15 - 30 min: setup up log in github as 3rd part reference
+1/15 - 1.5: setup up log in github as 3rd part reference
+    - GitHub repository setup
+    - Log structure creation
+    - Project planning and documentation setup
 
 1/19 - 3 hrs: team meeting to discuss future plans for Thursday demo and alpha build presentation
     - ordered temporary Lidar sensor to use for testing (Alpha build)
@@ -24,17 +27,22 @@ Time Log:
 1/22 - 3 hrs: meeting with stakholder
     - met with Alex and discussed the future of the project
     - also met with the team separately to talk about the demo for the alpha build
-    - staged a mini demo for the alpha build with all components we had working at the time including: UD and LED on the raspi
     - researched for the LiDar we need to order
 
-1/26 - 4hrs: lidar fully integrated & PCB discussion
+1/25 - 5 hrs: wotrking out kinks in the system
+    - staged a mini demo for the alpha build with all components we had working at the time including: UD and LED on the raspi
+    - serial communication debugging, trying to speed up the system
+    - Refactoring bat.py for stability
+
+1/26 - 5 hrs: lidar fully integrated & PCB discussion
     - initialized the UART for the LiDar
     - got the lidar fully functional using examples from the following websites:
         - https://makersportal.com/blog/distance-detection-with-the-tf-luna-lidar-and-raspberry-pi?srsltid=AfmBOor3_qmpS5YuLqr8yXoOtPq9wEVS-RkVBo3wcFVprpydy6TLWDue
     - the full circuit is functional with the distance sensor, light, and lidar sensor
     - researched and explored options for making a PCB for the future, very much still in the works but its something out stakeholder had mentioned in our last meeting
+    - added an on/off button but there are some kinks to work out
 
-2/3 - 4  hrs: team/mentor meeting and on/off button integration
+2/3 - 6 hrs: team/mentor meeting and on/off button integration
     - had alpha build demo
     - worked out kinks with on/off button and now works with no known bugs
     - discussed future plans for beta build 
@@ -58,5 +66,15 @@ Time Log:
     - fully removed the UD sensor in preperation for the second lidar sensor
     - adjusted wiring to allow easier placement into the raspi casing 
 
-TOTAL HOURS: 30.5 
-    updated 2/12
+2/17 - 5 hrs - adding second lidar 
+    - research multiple uart configuration on raspberry pi and debug issues with enabling uart2
+    - fixed systemd script and set alphabuild.py to run on startup
+    - modify code for two lidars
+    - added a battery pack so the system is more mobile and not reliant on being near a computer to power it
+
+2/18 - 2 hrs - added second haptic and working on RGB LED 
+    - there is a bug with the RGB LED where its not turning on
+    - took out the button to turn the system on and off because there is a on/off switch on the battery pack itself
+
+2/19 - 3 hrs - RGB LED bug
+    - spent more time working on getting the LED to work and had to switch out the components after some research
