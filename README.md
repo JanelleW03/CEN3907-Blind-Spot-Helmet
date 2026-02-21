@@ -14,4 +14,5 @@ As for physical components within the project, we have gone through many iterati
 The only main bug we have for our design at the moment is due to the physical connections between Raspberry Pi and sensors. Because we haven't soldered connections, as we are still testing multiple systems, our wiring is liable to disconnections during movement testing. This will be fixed once we have finalized our design and implement permanent connections.
 
 # Onshape Design of Helmet Module
+Copy and past this link into your browser to view:
 https://cad.onshape.com/documents/718453d0fac994bf19ba09c7/w/0e19fb7305c1e5489b3984cd/e/3690a92add8a8350898fd115?renderMode=0&uiState=69992da93609fa864f87f9de
