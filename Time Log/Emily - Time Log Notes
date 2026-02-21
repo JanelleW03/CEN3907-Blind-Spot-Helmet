@@ -1,16 +1,28 @@
 
 Time Log:
 1/15 - setup up log in github as 3rd part reference
-1/19 - team meeting 2 days ago  (jan 19th) for 3 hours to discuss work distributions for week 1
-1/23 - Met with Ana on Friday (1/23) for 3 hours to work on the 3d model housing for our components. We discuss the possible final 
-design for the housing and the material we should use.
-1/26 - Met with Janelle (1/26) and worked on the Lidar sensor for 2 hours
-1/29 - Worked on the alpha build document and alpha test plan for ~ 5 hours (1/29 and 1/30)
-2/10 - Check in meeting and group discussion on progress (1 hour)
-     - Worked on the PCB for 3 hours (2/10)
-2/12 - Team meeting for 1 hour
+1/19 - 3 hours (team meeting) 
+     - met to discuss work distributions for week 1
+1/23 - 3 hours (team meeting)
+     - Met with Ana for 3 hours to work on the 3d model housing for our components 
+     - We discuss the possible final prototype design for the housing and the material we should use.
+1/26 - 2 hours (team meeting)
+     - Met with Janelle and worked on the Lidar sensor for 2 hours
+1/29 - 5 hours (Individual Work)
+     - Worked on the alpha build document and alpha test plan for ~ 5 hours (1/29 and 1/30)
+2/10 - 4 hours (Team meeting/Individual)
+     - Check in meeting and group discussion on progress (1 hour)
+     - Worked on the PCB for 3 hours
+2/12 - 3 hours (Team meeting) 
      - Beta check in
      - discussed the progress with the pcb and realistic timeline to include it in design
-2/13 - Worked on the PCB for 3.5 Hours
+2/13 - 3.5 hours (Individual)
+     - Worked on the PCB for 3.5 Hours
      - changed the initial design to make sure there were gpio ports available to interface with the raspi
-2/17 - Finalized the pcb and produced the gerber file and uploaded 3 hours
+2/17 - 3 hours (team meeting)
+     - Finalized the pcb and produced the gerber file and uploaded
+2/19 - 3 hours (Team meeting/Individual)
+     - Worked on the PCB to make sure it fulfilled the requirements 
+     - Started working on the Beta Build document
+2/20 - 4 hours (Individual)
+     - Worked on the Beta Build
