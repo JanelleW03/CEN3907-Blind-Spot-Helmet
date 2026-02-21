@@ -12,4 +12,7 @@ Time Log:
 1/28 - 3 hrs - set up headless script on raspberry pi, got it to work, downloaded tflite model onto rasp pi 
 1/29 - 2 hrs - discussed helmet shape modifications, added lidar gpio code to headless script
 2/2-2/3 - 3 hrs - alpha demo, modify initial helmet module design after receiving print
-2/10 - 3 hrs - test camera object detection with haptics
+2/10 - 3 hrs - test camera object detection with haptics and start systemd script
+2/12 - 2.5 hrs - beta check in  meeting + rewiring/adjustment of layout in helmet case
+2/17 - 3 hrs - research multiple uart configuration on raspberry pi and debug issues with enabling uart2, also fixed systemd script and set alphabuild.py to run on startup
+2/17 - 2 hrs - modify code for two lidars

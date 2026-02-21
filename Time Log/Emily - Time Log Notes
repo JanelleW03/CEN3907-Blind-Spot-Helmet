@@ -6,4 +6,11 @@ Time Log:
 design for the housing and the material we should use.
 1/26 - Met with Janelle (1/26) and worked on the Lidar sensor for 2 hours
 1/29 - Worked on the alpha build document and alpha test plan for ~ 5 hours (1/29 and 1/30)
-2/10 - Worked on the PCB for 3 hours (2/10)
+2/10 - Check in meeting and group discussion on progress (1 hour)
+     - Worked on the PCB for 3 hours (2/10)
+2/12 - Team meeting for 1 hour
+     - Beta check in
+     - discussed the progress with the pcb and realistic timeline to include it in design
+2/13 - Worked on the PCB for 3.5 Hours
+     - changed the initial design to make sure there were gpio ports available to interface with the raspi
+2/17 - Finalized the pcb and produced the gerber file and uploaded 3 hours
