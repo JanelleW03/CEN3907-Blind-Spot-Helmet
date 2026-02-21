@@ -16,3 +16,6 @@ Time Log:
 2/12 - 2.5 hrs - beta check in  meeting + rewiring/adjustment of layout in helmet case
 2/17 - 3 hrs - research multiple uart configuration on raspberry pi and debug issues with enabling uart2, also fixed systemd script and set alphabuild.py to run on startup
 2/17 - 2 hrs - modify code for two lidars
+2/18 - 3 hrs - test systemd functionality by attaching haptics
+2/19 - 3 hrs - fully integrated both lidars and both haptic motors, fixed issues with uart, and completed alpha testing - verified that lidars and haptic correctly detect motion in specified range and
+                show the correct side that object is on
