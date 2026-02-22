@@ -6,7 +6,7 @@ import numpy as np
 # UD = DistanceSensor(echo=17, trigger=4, max_distance=4)
 motor1 = PWMOutputDevice(26)
 motor2 = PWMOutputDevice(27) # change this
-led = RGBLED(22, 23, 23, active_high=False)
+led = RGBLED(22, 23, 24, active_high=False)
 button = Button(17)
 button_state = False
 
