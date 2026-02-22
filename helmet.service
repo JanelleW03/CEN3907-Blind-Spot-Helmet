@@ -1,0 +1,14 @@
+[Unit]
+Description=Helmet Program
+After=network.target
+
+[Service]
+ExecStart=/home/helmet/object-detect/object-detection-on-raspberry-pi/venv/bin/python /home/helmet/object-detect/object-detection-on-raspberry-pi/src/cam_haptic.py
+WorkingDirectory=/home/helmet/object-detect/object-detection-on-raspberry-pi/src
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
