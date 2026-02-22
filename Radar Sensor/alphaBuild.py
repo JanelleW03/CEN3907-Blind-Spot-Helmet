@@ -5,7 +5,7 @@ import numpy as np
 
 # UD = DistanceSensor(echo=17, trigger=4, max_distance=4)
 motor = PWMOutputDevice(27)
-led = RGBLED(10, 9, 11, active_high=True)
+led = RGBLED(22, 23, 24,  active_high=False)
 button = Button(17)
 button_state = False
 
@@ -69,7 +69,8 @@ while True:
 			led.color = (0, 1, 0) # Green
 			motor.value = vibration
 		else:
-			led.color = (1, 1, 0) # Yellow when no object is close 
+			print("not detected")
+			led.color = (0, 0, 1) # blue when no object is close
 			motor.value = 0
 	else:
 		print("System Idle")
