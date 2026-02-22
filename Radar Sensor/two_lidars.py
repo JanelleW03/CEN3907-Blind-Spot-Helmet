@@ -6,7 +6,7 @@ import numpy as np
 # UD = DistanceSensor(echo=17, trigger=4, max_distance=4)
 motor1 = PWMOutputDevice(26)
 motor2 = PWMOutputDevice(27) # change this
-led = RGBLED(10, 9, 11, active_high=True)
+led = RGBLED(22, 23, 23, active_high=False)
 button = Button(17)
 button_state = False
 
@@ -100,7 +100,7 @@ while True:
             led.color = (0, 1, 0)
             motor2.value = vibration2
         elif distanceTF1 < 0.5 and distanceTF2 < 0.5: # somehow something on both sides?
-            led.color = (0, 1, 0)
+            led.color = (0, 0, 1) #blue
             motor1.value = vibration1
             motor2.value = vibration2
 	else:
