@@ -19,3 +19,4 @@ Time Log:
 2/18 - 3 hrs - test systemd functionality by attaching haptics
 2/19 - 3 hrs - fully integrated both lidars and both haptic motors, fixed issues with uart, and completed alpha testing - verified that lidars and haptic correctly detect motion in specified range and
                 show the correct side that object is on
+2/22 - 3 hrs - tested both lidars with led and button, fixed issues with integration, moved all wires and components into helmet module
