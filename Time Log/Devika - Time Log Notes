@@ -20,3 +20,6 @@ Time Log:
 2/19 - 3 hrs - fully integrated both lidars and both haptic motors, fixed issues with uart, and completed alpha testing - verified that lidars and haptic correctly detect motion in specified range and
                 show the correct side that object is on
 2/22 - 3 hrs - tested both lidars with led and button, fixed issues with integration, moved all wires and components into helmet module
+2/23-24 - 2 hrs - finalized beta presentation, fixed wiring of helmet module 
+3/1 - 2 hrs - worked on code to integrate camera with final led+lidar+button integration
+3/2 - 3 hrs - continued working on camera code, started testing
