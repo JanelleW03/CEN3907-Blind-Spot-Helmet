@@ -23,3 +23,4 @@ Time Log:
 2/23-24 - 2 hrs - finalized beta presentation, fixed wiring of helmet module 
 3/1 - 2 hrs - worked on code to integrate camera with final led+lidar+button integration
 3/2 - 3 hrs - continued working on camera code, started testing
+3/3 - 3 hrs - RC check in; tested camera_all.py, working - discussed with team plan to move from PCB to perfboard
