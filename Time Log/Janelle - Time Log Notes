@@ -78,3 +78,16 @@ Time Log:
 
 2/19 - 3 hrs - RGB LED bug
     - spent more time working on getting the LED to work and had to switch out the components after some research
+
+2/24 - 2 hrs
+    - mounted circuit onto helmet 
+    - altered configuration inside the housing the unit to make things more smooth
+
+3/3 - 3 hrs 
+    - had meeting with professor and discussed future plans
+    - scraped the PCB designs because it will be too expensive and will take too much time to ship
+    - started research for the battery to power the raspi and plans to implement a system to inform the user when the battery is low
+
+3/4 - 2hrs
+    - soldered button and LED to perfboard 
+    - started redesiging in the 3D printed housing unit now that the breadboard is removed and now will save more space
