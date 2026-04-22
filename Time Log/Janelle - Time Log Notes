@@ -96,7 +96,50 @@ Time Log:
     - looked at the battery options we can purchase 
     - tried to solve delayed camera reaction
 
-3/10 - 1.5 hrs 
+3/10 - 2.5 hrs 
     - worked on new housing unit
     - soldered haptics 
     - testing outside and renewed detection
+
+3/5 - 3 hrs
+    - modified camera_all.py to no longer require button press to activate system
+
+3/13 - 3 hrs
+    - continued outside testing, noted performance in real-world conditions
+
+3/16 - 3.5 hrs
+    - researched EfficientNet model and types of vehicle data the model is trained on 
+
+3/17 - 4 hrs
+    - started working on redesign the 3d casing and went thru several iterations. 
+
+3/24 - 3 hrs
+    - assembled and integrated battery pack for raspberry pi to improve portability
+
+3/25 - 3 hrs
+    - retried outside testing, noted camera's range of detection, verified car detection triggers haptics correctly
+
+3/26 - 4 hrs
+    - check in meeting with team, discussed new requirements and design changes for 3D casing
+
+3/26 - 2.5 hrs
+    - worked on release candidate documentation
+    - discovered fix for camera_all.py to remove extraneous haptic vibration
+
+4/2 - 4 hrs
+    - received new 3D printed casing iteration, attempted to fit all components inside
+
+4/6 - 3.5 hrs 
+    - worked on another iteraiton of the 3d casing, needed more height and room for the battery 
+
+4/11 - 2.5 hrs
+    - tested system outside with new casing, discovered issue with LED soldering
+
+4/13 - 4 hrs
+    - attempted to resolder LED to fix issue discovered during outside testing
+
+4/15 - 3 hrs
+    - final round of outside testing, verified light and haptics respond correctly to different moving vehicles
+
+4/18 - 5 hrs
+    - filmed testing and edit videos for demonstration purposes
