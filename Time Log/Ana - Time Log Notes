@@ -44,4 +44,93 @@ Time Log:
   - rewired/replaced wires between raspberry pi, breadboard, and lidar to make everything fit more comfortably and look more polished
   - considered changing gpio assignments on raspberry pi to accomodate for the second lidar and haptic sensor
 
-2/17
+2/17 - 3 hrs (team meeting)
+  - modified code for two lidars to work with longer distance
+
+2/18 - 4 hrs (team meeting)
+  - tested system functionality by attaching haptics
+
+2/19 - 3 hrs (team meeting)
+  - fully integrated both lidars and both haptic motors
+  - completed alpha testing
+  - verified that lidars and haptic correctly detect motion in specified range and show the correct side that object is on
+
+2/22 - 4 hrs (individual/team meeting)
+  - tested both lidars with led and button
+  - moved all wires and components into helmet module
+  - edited 3d model design for module
+
+2/23 - 2 hrs (individual meeting)
+  - practiced beta presentation
+
+2/24 - 2 hrs (individual meeting)
+  - finalized beta presentation
+
+3/3 - 3 hrs (individual/team meeting)
+  - RC check in; tested camera_all.py and found out that it worked
+  - discussed with team plan to move from PCB to perfboard
+
+3/6 - 3 hrs (individual meeting)
+  - researched code to make detection faster/more accurate
+
+3/7 - 1 hr (individual meeting)
+  - edited 3d model design for module
+
+3/9 - 3 hrs (team meeting)
+  - created testing plan to take casing outside, real-world testing
+
+3/10 - 3 hrs (team meeting)
+  - started testing outside (took equipment outside of casing to make process easier)
+  - made edits to 3d model to accomodate new components
+
+3/24 - 3.5 hrs (team meeting)
+  - assembled battery pack for raspberry pi
+
+3/25 - 3 hrs (team meeting)
+  - retried outside testing
+  - noted camera's range of detection to be quite large
+  - verified detection of car with haptics
+
+3/26 - 4.5 hrs (individual/team meeting)
+  - check in meeting
+  - discussed and implemented new requirements for 3D casing with battery pack and perfboard additions
+  - worked on documentation for release candidate
+  - discovered fix for camera_all to remove extraneous haptic vibration
+
+
+3/30 - 5 hrs (individual meeting)
+  - worked on documentation for release candidate
+  - discovered fix for camera_all to remove extraneous haptic vibration
+  - worked on 3d model
+
+3/31 - 2 hrs (individual meeting)
+  - worked on 3d model
+
+4/2 - 2 hrs (team meeting)
+  - received new 3D casing
+  - fit all components inside
+
+4/3 - 2 hrs (team meeting)
+  - edited 3d model after new casing did not work as expected for requirements
+
+4/10 - 2 hrs (team meeting)
+  - fit all components inside new casing
+  - discussed final report
+
+4/12 - 2 hrs (team meeting)
+  - tested outside with new casing
+  - discovered issue with LED soldering
+
+4/13 - 2 hrs (team meeting)
+  - attempted to resolder LED
+  - did more testing with haptic only
+
+4/14 - 5 hrs (team meeting)
+  - rewrote main code
+  - fixed camera_all to have simultaneous detection on right and left sides
+  = fixed inconsistency with LED and haptic
+
+4/15 - 3 hrs (team meeting)
+  - final round of outside testing
+  - verified that light and haptics work properly with different moving vehicles
+  - filmed videos of module working as expected
