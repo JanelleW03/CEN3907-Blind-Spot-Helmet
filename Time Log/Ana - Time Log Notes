@@ -3,12 +3,12 @@ Time Log:
 
 1/15 - setup up log in github as 3rd part reference
 
-1/19 - 3 hours (team meeting)
+1/19 - 5 hours (team meeting)
   - ordered temporary Lidar sensor to use for testing (Alpha build)
   - began wiring arduino components and raspberry pi together
   - planned rest of week's work with team
 
-1/20 - 2 hours (individual/team meeting)
+1/20 - 3 hours (individual/team meeting)
   - aided Devika and Janelle in proving raspi functionality with ultrasonic distance and haptic sensors (moved from arduino to raspi)
   - began setting up ssh for the Raspi for future parallel team work
 
@@ -18,11 +18,11 @@ Time Log:
   - implemented ssh for Raspi for future parallel independent/team work
   - made plan for 3d modeling of helmet module and next steps
 
-1/23 - 2 hours (individual/team meeting)
+1/23 - 3 hours (individual/team meeting)
   - met with Emily to work on 3d-modeled helmet module on Onshape
   - brainstormed new ideas for module implementation
 
-1/27 - 2 hours (individual/team meeting)
+1/27 - 3 hours (individual/team meeting)
   - worked on 3d model initial idea (sliding mount and housing module) on Onshape
   - used actual component measurements to create prototype model, with hole placements for components being considered (haptic wires, charger, etc.)
   - started printing first model
@@ -60,10 +60,10 @@ Time Log:
   - moved all wires and components into helmet module
   - edited 3d model design for module
 
-2/23 - 2 hrs (individual meeting)
+2/23 - 3 hrs (individual meeting)
   - practiced beta presentation
 
-2/24 - 2 hrs (individual meeting)
+2/24 - 3 hrs (individual meeting)
   - finalized beta presentation
 
 3/3 - 3 hrs (individual/team meeting)
@@ -73,7 +73,7 @@ Time Log:
 3/6 - 3 hrs (individual meeting)
   - researched code to make detection faster/more accurate
 
-3/7 - 1 hr (individual meeting)
+3/7 - 3 hr (individual meeting)
   - edited 3d model design for module
 
 3/9 - 3 hrs (team meeting)
@@ -83,7 +83,7 @@ Time Log:
   - started testing outside (took equipment outside of casing to make process easier)
   - made edits to 3d model to accomodate new components
 
-3/24 - 3.5 hrs (team meeting)
+3/24 - 5 hrs (team meeting)
   - assembled battery pack for raspberry pi
 
 3/25 - 3 hrs (team meeting)
@@ -91,7 +91,7 @@ Time Log:
   - noted camera's range of detection to be quite large
   - verified detection of car with haptics
 
-3/26 - 4.5 hrs (individual/team meeting)
+3/26 - 5 hrs (individual/team meeting)
   - check in meeting
   - discussed and implemented new requirements for 3D casing with battery pack and perfboard additions
   - worked on documentation for release candidate
@@ -103,25 +103,25 @@ Time Log:
   - discovered fix for camera_all to remove extraneous haptic vibration
   - worked on 3d model
 
-3/31 - 2 hrs (individual meeting)
+3/31 - 3 hrs (individual meeting)
   - worked on 3d model
 
-4/2 - 2 hrs (team meeting)
+4/2 - 3 hrs (team meeting)
   - received new 3D casing
   - fit all components inside
 
-4/3 - 2 hrs (team meeting)
+4/3 - 3 hrs (team meeting)
   - edited 3d model after new casing did not work as expected for requirements
 
-4/10 - 2 hrs (team meeting)
+4/10 - 3 hrs (team meeting)
   - fit all components inside new casing
   - discussed final report
 
-4/12 - 2 hrs (team meeting)
+4/12 - 3 hrs (team meeting)
   - tested outside with new casing
   - discovered issue with LED soldering
 
-4/13 - 2 hrs (team meeting)
+4/13 - 3 hrs (team meeting)
   - attempted to resolder LED
   - did more testing with haptic only
 
