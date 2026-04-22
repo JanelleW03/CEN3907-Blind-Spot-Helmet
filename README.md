@@ -1,4 +1,4 @@
-# CEN3907-Blind-Spot-Helmet
+# CEN4908-Blind-Spot-Helmet
 Urban cyclists face safety risks from traffic and limited visibility. Traditional helmets protect the head but don’t enhance awareness. The Blind Spot Helmet uses radar-based detection and haptic feedback to alert riders of nearby vehicles in real time, improving safety for daily commuters on busy streets.
 
 At a high level, our current architecture for this project is as follows. We utilize a Raspberry Pi 4 to poll two LiDAR sensors and interpret if there are any objects present within a predetermined range that could pose a risk to the user. If the LiDARs identify a potentially dangerous object, a haptic feedback sensor will be activated on the side that the object was detected to alert the user of its presence.
