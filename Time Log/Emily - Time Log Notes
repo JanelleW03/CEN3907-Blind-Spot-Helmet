@@ -10,27 +10,29 @@ Time Log:
      - Met with Janelle and worked on the Lidar sensor for 2 hours
 1/29 - 5 hours (Individual Work)
      - Worked on the alpha build document and alpha test plan for ~ 5 hours (1/29 and 1/30)
-2/10 - 4 hours (Team meeting/Individual)
+2/10 - 5 hours (Team meeting/Individual)
      - Check in meeting and group discussion on progress (1 hour)
-     - Worked on the PCB for 3 hours
-2/12 - 3 hours (Team meeting) 
+     - Worked on the PCB for 4 hours
+2/12 - 5 hours (Team meeting) 
      - Beta check in
      - discussed the progress with the pcb and realistic timeline to include it in design
-2/13 - 3.5 hours (Individual)
-     - Worked on the PCB for 3.5 Hours
+2/13 - 5 hours (Individual)
+     - Worked on the PCB for 5 Hours
      - changed the initial design to make sure there were gpio ports available to interface with the raspi
-2/17 - 3 hours (team meeting)
+2/17 - 6 hours (team meeting)
      - Finalized the pcb and produced the gerber file and uploaded
-2/19 - 3 hours (Team meeting/Individual)
+2/19 - 5 hours (Team meeting/Individual)
      - Worked on the PCB to make sure it fulfilled the requirements 
      - Started working on the Beta Build document
 2/20 - 4 hours (Individual)
      - Worked on the Beta Build
-3/9 - 3 hrs (team meeting)
+3/9 - 5 hrs (team meeting)
   - created testing plan to take casing outside, real-world testing
 
-3/10 - 3 hrs (team meeting)
+3/10 - 4 hrs (team meeting)
   - started testing outside (took equipment outside of casing to make process easier)
+3/12 - 3 hours (individual)
+  - Worked on mitigating the need for pcb but inability to get one due to time constraint
 
 3/24 - 5 hrs (team meeting)
   - assembled battery pack for raspberry pi
@@ -69,9 +71,11 @@ Time Log:
   - tested outside with new casing
   - discovered issue with LED soldering
 
-4/13 - 3 hrs (team meeting)
+4/13 - 6 hrs (team meeting and individual)
   - attempted to resolder LED
   - did more testing with haptic only
+  - soldered button to the battery pack
+  - tried to mitigate some issues with the battery pack
 
 4/14 - 5 hrs (team meeting)
   - rewrote main code
